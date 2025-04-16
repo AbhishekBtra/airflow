@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.
 class AirflowOperatorFactory():
     
     @staticmethod
-    def get_dummy_operator(dag, task_id):
+    def get_empty_operator(dag, task_id):
         task = EmptyOperator(
             dag = dag,
             task_id = task_id

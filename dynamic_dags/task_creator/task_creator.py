@@ -18,7 +18,7 @@ class TaskCreator:
         elif self._strategy == 'EmptyOperatorStrategy':
             self._strategy = EmptyOperatorStrategy(self.name)
         else:
-            msg = "Unknown Castor strategy: {}"
+            msg = "Unknown strategy: {}"
             raise NameError(msg.format(self._strategy))
 
         task = self._strategy.create_task(dag)
