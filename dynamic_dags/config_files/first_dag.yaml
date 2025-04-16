@@ -1,6 +1,6 @@
 dag:
-  dag_id: 'init_castor_dag'
-  default_args: '{"owner": "castor", "start_date": "2021-06-13"}'
+  dag_id: 'first_dag'
+  default_args: '{"owner": "castor", "start_date": "2025-04-15"}'
   schedule_interval: '@once'
   catchup: False
   tags:
