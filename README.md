@@ -4,7 +4,7 @@ This repo contains learning material and working hands on code to practice.
 # Apache Airflow
 Airflow is an open-source platform for developing, scheduling, and monitoring batch-oriented workflows. Airflow’s extensible Python framework enables you to build workflows connecting with virtually any technology. A web interface helps manage the state of your workflows. Airflow is deployable in many ways, varying from a single process on your laptop to a distributed setup to support even the biggest workflows.
 
-#Dynamic Airflow DAGs
+# Dynamic Airflow DAGs
 
 In Airflow, DAGs are defined as Python code. Airflow executes all Python code in the dags_folder and loads any DAG objects that appear in globals(). The simplest way to create a DAG is to write it as a static Python file.
 
