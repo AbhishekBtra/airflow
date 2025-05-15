@@ -11,3 +11,17 @@ In Airflow, DAGs are defined as Python code. Airflow executes all Python code in
 Sometimes, manually writing DAGs isn't practical. Maybe you have hundreds or thousands of DAGs that do similar things with just a parameter changing between them. Or maybe you need a set of DAGs to load tables, but don't want to manually update DAGs every time the tables change. In these cases, and others, it makes more sense to dynamically generate DAGs.
 
 Because everything in Airflow is code, you can dynamically generate DAGs using Python alone. As long as a DAG object in globals() is created by Python code that is stored in the dags_folder, Airflow will load it. In this guide, you'll learn how to dynamically generate DAGs. You'll learn when DAG generation is the preferred option and what pitfalls to avoid
+
+# To Kill Airflow Instance
+
+You could try the following (in bash):
+
+pkill --signal 2 -u $USER airflow
+
+or
+
+pkill --signal 15 -u $USER airflow
+
+or
+
+pkill --signal 9 -u $USER airflow
